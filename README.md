@@ -1,16 +1,16 @@
 # Diabetes Prediction Web App
 
 ## Overview
-This repository contains a machine learning model and web application for predicting diabetes in femail patients based on various factors such as age, no of prganacies, BMI, Glucose level, Insulin level, Blood pressure, Skin thickness, and Diabetes prediction function. The model is trained on a dataset of diabetes records from a healthcare center and aims to provide accurate diabetes prediction via a simple web app for non technical users.
+This repository contains a machine learning model and web application for predicting diabetes in female patients based on various factors such as age, no of pregnancies, BMI, Glucose level, Insulin level, Blood pressure, Skin thickness, and Diabetes prediction function. The model is trained on a dataset of diabetes records from a healthcare center and aims to provide accurate diabetes prediction via a simple web app for non-technical users.
 
 ## Dataset
 The dataset used for training and testing the model is included in the `data` directory. It consists of a CSV file named `insurance.numbers.csv`, containing the following columns:
-- `Pregnancies`: No of pregnancies the indivdual has had including past and present.
+- `Pregnancies`: No of pregnancies the individual has had including past and present.
 - `Glucose`: Level of glucose presently.
 - `Blood Pressure`: The individual's current blood pressure.
 -  `Skin thickness`: Skin thickness of the individual.
-- `Bmi`: The individual's Body Mass Index (BMI).
-- `Insulin level`: Level of insulin in individual.
+- `BMI`: The individual's Body Mass Index (BMI).
+- `Insulin level`: Level of insulin in an individual.
 - `Diabetes prediction function`: Age of the individual in years.
 - `Age`: Age of the individual in years.
 
@@ -24,7 +24,7 @@ The model development process involves several steps, including data preprocessi
 
 ### Feature Engineering
 - Explore feature distributions: Analyze the distribution of features and identify any outliers or anomalies.
-- Create new features: Derive additional features if necessary, such as interaction terms or polynomial features, to capture complex relationships.
+- Create new features: Derive additional features, such as interaction terms or polynomial features, to capture complex relationships if necessary.
 
 ### Model Selection
 - Choose algorithms: Select suitable machine learning algorithms for regression tasks, such as linear regression, decision trees, or ensemble methods.
@@ -36,7 +36,7 @@ The model development process involves several steps, including data preprocessi
 - Evaluate performance: Evaluate each model's performance on the test set using appropriate metrics such as mean absolute error (MAE), mean squared error (MSE), or R-squared.
 
 ### Model Optimization
-- Hyperparameter tuning: Fine-tune model hyperparameters using techniques like grid search or randomized search to improve performance.
+- Hyperparameter tuning: Fine-tune model hyperparameters using grid or randomized search techniques to improve performance.
 - Regularization: Apply regularization techniques (e.g., L1 or L2 regularization) to prevent overfitting and enhance model robustness.
 
 ## Model Deployment
@@ -44,12 +44,12 @@ Once the model is trained and optimized, it can be deployed in various ways, inc
 - Integrating into a web application or mobile app for real-time predictions.
 - Exposing as an API endpoint for remote inference.
 - Packaging as a standalone application for local use.
-For this project, i deployed this model in form of a web application using Streamlit.
+For this project, I deployed this model in form of a web application using Streamlit.
 
-# Steps in model deployment using streamlit
-1. Create a python virtual enviroment
-2. Run spyder
-3. import dependencies and libraries (numpy, pickle, streamlit)
+# Steps in model deployment using Streamlit
+1. Create a Python virtual environment
+2. Run Spyder
+3. import dependencies and libraries (Numpy, Pickle, Streamlit)
 4. Streamlit run on your terminal
 
    
@@ -61,10 +61,10 @@ Ensure you have the following dependencies installed to run the code:
 - Pandas
 - NumPy
 - Pickle
-- Streamlt
+- Streamlit
   
 ## Findings
-Based don the model prediction, Older females with high blood level tend to be diabetic and no of pregnancies have little or no effect on diabeteic diagnosis in a female. 
+Based on the model prediction, Older females with high blood levels tend to be diabetic and the number of pregnancies has little or no effect on diabetes diagnosis in a female. 
 
 ## Conclusion
 SVM was used and the accuracy score for this model was 79%. 
